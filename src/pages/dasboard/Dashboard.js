@@ -1,6 +1,10 @@
 import React from "react";
-import Sidebar from "../components/layout/Sidebar";
+import Sidebar from "../../components/layout/Sidebar";
 import DataTable from "react-data-table-component";
+import OrderAreaChart from "./common/OrderAreaChart";
+import DeliveryStatusChart from "./common/DeliveryStatusChart";
+import OrderBarChart from "./common/OrderBarChart";
+import StoreStatusChart from "./common/StoreStatusChart";
 
 const Dashboard = () => {
   const columns = [
@@ -52,6 +56,13 @@ const Dashboard = () => {
   };
   return (
     <Sidebar>
+       <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 mt-8">
+        <DeliveryStatusChart/>
+        <OrderBarChart/>
+        <OrderAreaChart/>
+        <StoreStatusChart/>
+
+      </div>
         <div className="mt-2">
             <p className="font-semibold text-xl mb-2">Dashboard</p>
         </div>

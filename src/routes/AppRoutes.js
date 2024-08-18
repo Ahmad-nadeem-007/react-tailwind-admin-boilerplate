@@ -1,10 +1,10 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import ProtectedRoute from "./ProtectedRoute";
-import Dashboard from "../pages/Dashboard";
 import Users from "../pages/users/Users";
 import AddUser from "../pages/users/AddUser";
 import Login from "../pages/Login";
+import Dashboard from "../pages/dasboard/Dashboard";
 
 const AppRoutes = () => {
   return (
